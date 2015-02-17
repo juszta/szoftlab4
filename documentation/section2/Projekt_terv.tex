@@ -3,3 +3,85 @@
 A csapat öt főből áll, próbálunk mindenkinek azonos nehézségű feladatokat találni, 
 ami lehetőleg megfelel az egyéni preferenciáinak, nincsenek dedikált szerepek, mindenki foglalkozik mindennel.
 
+\begin{center}
+	\begin{tabular}{ | c | c | }
+	\hline
+		\multicolumn{2}{ | c | }{
+			\textbf{Stapelspeicher csapat}} \\ \hline
+		\textbf{Név} & 
+		\textbf{Feladatkör} 
+		\\ \hline \hline
+		Kemény Károly & the boss \\ \hline
+		Gema Barnabás &  cickány \\ \hline
+		Juszt Ádám & the punctual \\ \hline
+		Somogyi Gábor & the loud guy \\ \hline
+		Pilinszki-Nagy Csongor & the manager \\ \hline
+		
+		
+	\end{tabular}
+\end{center}
+
+\subsubsection{Kommunikáció}
+
+\paragraph{verziókezelés} Verziókezelésre a csapat a Git nevű verziókezelő rendszerre épülő Github platformot használja, azért mert ingyenes, elterjedt, és kiváló szolgáltatások épülnek köré. Így tartja nyilván a csapat a dokumentáció illetve a forráskód inkrementális változásait.
+
+\paragraph{facebook} A csapat egy privát facebook csoportot használ fórum jelleggel, ide kerülnek ki, és innen kereshetőek vissza a közérdekű információk, például a megbeszélések időpontjai.
+
+\paragraph{megbeszélések} A különböző feladatrészek a megbeszéléseken kerülnek kiosztásra, amiket úgy tervezünk, hogy lehetőleg mindenki részt tudjon venni rajta személyesen. Ezen felül még folytatunk skype megbeszéléseket is.
+
+\subsubsection{Használt Programok}
+
+\paragraph{Verziókezelés} Verziókezelésre Git programot használunk, a main repositoryt a Github szolgáltatja, amely egyszerűvé teszi a kollaborálást.
+
+\paragraph{Fejlesztőkörnyezet} Fejlesztéshez a csapat Eclipset illetve IntelliJ IDEA-t használ.
+
+\paragraph{Dokumentáció} Dokumentációra LaTeX-et használunk. A szerkesztő környezetként a TeXstudio nevű szoftver szolgál, illetve az egész dokumentáció a projekttel együtt egy repositoryban verziókezelés alatt áll.
+
+\subsubsection{Mérföldkövek, Határidők}
+
+\begin{center}
+	\begin{tabular}{ | l | l | l | }
+		\hline
+		\textbf{Dátum} &
+		\textbf{Feladat} &
+		\textbf{Ellenőrzés}
+		
+		\\ \hline \hline
+		febr. 23. & Követelmény, projekt, funkcionalitás & beadás
+		\\ \hline 
+		márc. 2. &	Analízis modell kidolgozása 1. & beadás
+		\\ \hline 
+		márc. 9. &	Analízis modell kidolgozása 2. & beadás
+		\\ \hline 
+		márc. 16. &	Szkeleton tervezése & beadás
+		\\ \hline 		
+		márc. 23. &	Szkeleton & beadás
+		\\ \hline
+		márc. 25. & Szkeleton & bemutató
+		\\ \hline 
+		márc. 30. &	Prototípus koncepciója & beadás
+		\\ \hline 
+		ápr. 7.	 & Részletes tervek & beadás
+		\\ \hline 
+		ápr. 20. &	Prototípus & beadás
+		\\ \hline 
+		ápr. 22. & Prototípus & bemutató
+		\\ \hline
+		ápr. 27. &	Grafikus felület specifikációja & beadás
+		\\ \hline 	 
+		máj. 11. &	Grafikus változat & beadás
+		\\ \hline
+		máj. 13. & Grafikus bemutató & bemutató
+		\\ \hline
+		máj. 15. &	Összefoglalás & beadás
+		\\ \hline 
+	\end{tabular}
+\end{center}
+
+\paragraph{Szkeleton változat} A szkeleton változat célja annak bizonyítása, hogy az objektum és dinamikus modellek a definiált feladat egy modelljét alkotják. A szkeleton egy program, amelyben már valamennyi, a végső rendszerben is szereplő business objektum szerepel. Az objektumoknak csak az interfésze definiált. Valamennyi metódus az indulás pillanatában az ernyőre szöveges változatban kiírja a saját nevét, majd meghívja azon metódusokat, amelyeket a szolgáltatás végrehajtása érdekében meg kell hívnia. Amennyiben a metódusból valamely feltétel fennállása esetén hívunk meg más metódusokat, akkor a feltételre vonatkozó kérdést interaktívan az ernyőn fel kell tenni és a kapott válasz alapján kell a továbbiakban eljárni. A szkeletonnak alkalmasnak kell lenni arra, hogy a különböző forgatókönyvek és szekvencia diagramok ellenőrizhetők legyenek. Csak karakteres ernyőkezelés fogadható el, mert ez biztosítja a rendszer egyszerűségét.
+
+\paragraph{Prototípus} A prototípus program célja annak demonstrálása, hogy a program elkészült, helyesen működik, valamennyi feladatát teljesíti. A prototípus változat egy elkészült program kivéve a kifejlett grafikus interfészt. A változat tervezési szempontból elkészült, az ütemezés, az aktív objektumok kezelése megoldott. A business objektumok - a megjelenítésre vonatkozó részeket kivéve - valamennyi metódusa a végleges algoritmusokat tartalmazza. A megjelenítés és működtetés egy alfanumerikus ernyőn követhető, ugyanakkor a megjelenítés fájlban is logolható, ezzel megteremtve a rendszer tesztelésének lehetőségét. Különös figyelmet kell fordítani az interfész logikájára, felépítésére, valamint arra, hogy az mennyiben tükrözi és teszi láthatóvá a program működését, a beavatkozások hatásait.
+
+\paragraph{Grafikus} A grafikus (teljes) változat a prototípustól elvileg csak a kezelői felület minőségében különbözhet. Ennek
+változatnak az értékelésekor a hangsúlyt sokkal inkább a megvalósítás belső szerkezetére, semmint a külalakra
+kell helyezni.
